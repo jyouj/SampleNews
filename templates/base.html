@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SampleNews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+    <style type="text/css">
+      a { text-decoration:none; }
+      a:link { color : #000000; }
+      a:visited { color : #000000; }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <h3 class="title is-3"><a class="navbar-item" href="#">SampleNews</a></h3>
+      </div>
+    </nav>
+
+  <section class="section">
+      {% block body %}{% endblock %}
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <style>
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+  }
+
+  body {
+    padding-top: 30px;
+  }
+  </style>
+  </body>
+</html>
